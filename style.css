@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas:
+    "header header header"
+    "sidebar konten konten"
+    "sidebar konten konten"
+    "sidebar konten konten"
+    "footer footer footer";
+    overflow: hidden;
+}
+
+.k {
+    
+    background-color: bisque;
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+}
+.side-bar {
+    grid-area: sidebar;
+    background-color: green;
+
+}
+
+.content {
+    grid-area: konten;
+    background-color: gainsboro;
+}
+.footer {
+    grid-area: footer;
+    background-color: brown;
+}
